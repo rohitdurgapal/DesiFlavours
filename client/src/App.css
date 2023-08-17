@@ -1,0 +1,239 @@
+.header-logo {
+  font-family: fantasy;
+  color: #f36a21 !important;
+  font-size: 2em;
+  margin: 0;
+}
+.header-logo span {
+  font-family: fantasy;
+  color: #000000;
+}
+.header-logo:hover {
+  color: #f36a21 !important;
+}
+.active {
+  color: white;
+}
+.add-block {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px;
+  align-items: center;
+}
+.add-block h3,
+.form-box h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #000000;
+  margin: 0;
+}
+.form-box h3 {
+  margin: 15px 0px;
+}
+.add-block a {
+  margin-left: auto;
+}
+.masters-link {
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background-color: #212529;
+  padding: 1rem 0px;
+  margin-top: 1rem;
+}
+.toast-delete {
+  background-color: #212529;
+  padding: 1rem;
+  color: white;
+}
+.multiSelectContainer input {
+  margin-top: 0px !important;
+}
+.bold-text {
+  text-align: right;
+  font-weight: bold;
+}
+.right-text {
+  text-align: right;
+}
+.navbar-brand,
+.z-setter {
+  z-index: 1;
+}
+.main-nav-link {
+  display: block;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  padding: 0.5rem;
+}
+.main-nav-link.active {
+  color: var(--bs-navbar-active-color);
+}
+.main-nav-link:hover {
+  color: var(--bs-navbar-active-color);
+}
+.nav-class {
+  border-bottom: 2px solid #e4a11b;
+}
+.go2534082608 {
+  background-color: #f36a21 !important;
+}
+.ul-header-design {
+  justify-content: center;
+}
+.custom-account-name {
+  background-color: #f36a21 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.table-design th {
+  color: #ffffff;
+  background-color: #f36a21 !important;
+}
+.stricky-table {
+  max-height: 70vh;
+  overflow: auto;
+}
+.thead-dark {
+  position: sticky;
+  top: 0;
+}
+.spinner-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.c-block label {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.c-block input,
+.c-block select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none !important;
+  height: 35px;
+}
+.c-block input[type="file"] {
+  padding: 2px;
+}
+.c-block button {
+  margin-top: 26px;
+}
+.c-block input:focus:active,
+select:focus:active {
+  border: 1px solid red;
+}
+.c-block .search-wrapper {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0px 4px;
+  border-radius: 4px;
+  outline: none !important;
+}
+.multi-select-block {
+  margin: 15px 0px;
+}
+.multi-select-block input {
+  width: max-content;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none !important;
+}
+.chip,
+.highlightOption {
+  background: #f36a21 !important;
+}
+.multiSelectContainer li:hover {
+  background: #f36a21 !important;
+}
+.table-design .item-quantity-price {
+  font-size: 12px;
+  width: 100%;
+  display: block;
+  font-weight: 600;
+  border-bottom: 2px solid #f36a21;
+  padding: 4px 0px;
+}
+.c-block {
+  margin-bottom: 10px;
+}
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #f36a21 !important;
+  font-weight: 600;
+}
+.multiSelectContainer input {
+  width: max-content;
+  border: 0 !important;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none !important;
+  height: auto;
+  background: none;
+}
+.img-block span {
+  color: #f36a21;
+  border: 1px dotted #f36a21;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.admin-modal .modal {
+  --mdb-modal-width: 60vw;
+}
+.hfjhiueiu {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.placed-bg {
+  background-color: #2196f3;
+}
+.accepted-bg {
+  background-color: #ffc107;
+}
+.rejected-bg {
+  background-color: #ff1100;
+}
+.deliverd-bg {
+  background-color: #4caf50;
+}
+.table-design-customer {
+  margin-bottom: 2em;
+}
+.table-design-customer th,
+.table-design-customer td {
+  padding: 1rem 1.4rem;
+}
+.bill-table-block {
+  font-size: 14px;
+  margin: 10px;
+  font-weight: 700;
+}
+.bill-table-block .table > :not(caption) > * > * {
+  border-bottom-width: 0px;
+}
+.admin-profile-input {
+  background-color: #f36a2130 !important;
+  font-weight: 600;
+}
+.restaurant-span {
+  display: block;
+  border-top: 2px solid #f36a21;
+  color: #f36a21;
+  font-weight: 600;
+  margin-top: 5px;
+}

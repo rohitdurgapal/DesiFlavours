@@ -1,0 +1,59 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+.login-admin {
+  font-family: fantasy;
+  color: #f36a21;
+  font-size: 3em;
+}
+.login-admin span {
+  font-family: fantasy;
+  color: #000000;
+}
+.login-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.login-page {
+  display: flex !important;
+  height: 82vh;
+  justify-content: center;
+  align-items: center;
+}
+.custom-btn {
+  background-color: #f36a21 !important;
+  color: #ffffff !important;
+}
+.form-outline .form-control:focus ~ .form-label {
+  color: #f36a21 !important;
+}
+.btn-custom {
+  margin-left: auto !important;
+  background-color: #000000 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.btn-custom span {
+  color: red;
+  font-weight: 600;
+  margin-left: 12px;
+  font-size: 3em;
+}

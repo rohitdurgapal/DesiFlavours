@@ -88,7 +88,7 @@ const Header = () => {
               <ul>
                 <li>
                   <NavLink to="/" data-text="MENU" end>
-                    <span>MENUssssssssssss</span>
+                    <span>MENU</span>
                   </NavLink>
                 </li>
               </ul>

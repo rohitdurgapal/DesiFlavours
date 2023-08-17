@@ -13,7 +13,10 @@ import customerAuthRoutes from "./routes/customerAuthRoutes.js";
 import profileRoutes from "./routes/profileRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import cors from "cors";
-
+import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //configure env
 dotenv.config();
 
@@ -27,8 +30,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
-app.use("/uploads/items", express.static("uploads/items"));
-app.use("/uploads/dummy", express.static("uploads/dummy"));
+// app.use("/uploads/items", express.static("uploads/items"));
+// app.use("/uploads/dummy", express.static("uploads/dummy"));
+app.use(
+  "/uploads/items",
+  express.static(path.join(__dirname, "uploads/items"))
+);
+app.use(
+  "/uploads/dummy",
+  express.static(path.join(__dirname, "uploads/dummy"))
+);
 
 //routes
 app.use("/api/v1/auth", authRoute);

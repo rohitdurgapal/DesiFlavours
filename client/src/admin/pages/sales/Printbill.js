@@ -43,7 +43,7 @@ const Printbill = () => {
       <div ref={componentRef} className="bill-table-block">
         <Table>
           <tbody>
-            <tr>
+            {/* <tr>
               <td colSpan={2} style={{ padding: "0px" }}>
                 <div
                   style={{
@@ -59,7 +59,7 @@ const Printbill = () => {
                   />
                 </div>
               </td>
-            </tr>
+            </tr> */}
             <tr>
               <td colSpan={2} style={{ padding: "0px" }}>
                 <div
@@ -71,7 +71,7 @@ const Printbill = () => {
                     fontWeight: "800",
                   }}
                 >
-                  Desi Flavours
+                  {sales?.restaurantId?.name}
                 </div>
               </td>
             </tr>
@@ -84,11 +84,31 @@ const Printbill = () => {
                   }}
                 >
                   {sales?.restaurantId?.address}
-                  <br />
-                  GSTN - {sales?.restaurantId?.gstn}
-                  <br />
-                  Mobile - {sales?.restaurantId?.mobile}
                 </div>
+                {sales?.restaurantId?.gstn ? (
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "0px",
+                    }}
+                  >
+                    GSTN - {sales?.restaurantId?.gstn}
+                  </div>
+                ) : (
+                  ""
+                )}
+                {sales?.restaurantId?.mobile ? (
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "0px",
+                    }}
+                  >
+                    Mobile - {sales?.restaurantId?.mobile}
+                  </div>
+                ) : (
+                  ""
+                )}
               </td>
             </tr>
             <tr>

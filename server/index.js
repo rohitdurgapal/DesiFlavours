@@ -32,14 +32,8 @@ app.use(express.json());
 app.use(morgan("dev"));
 // app.use("/uploads/items", express.static("uploads/items"));
 // app.use("/uploads/dummy", express.static("uploads/dummy"));
-app.use(
-  "/uploads/items",
-  express.static(path.join(__dirname, "uploads/items"))
-);
-app.use(
-  "/uploads/dummy",
-  express.static(path.join(__dirname, "uploads/dummy"))
-);
+app.use("/uploads/items", express.static(path.join(__dirname, "uploads/items")));
+app.use("/uploads/dummy", express.static(path.join(__dirname, "uploads/dummy")));
 
 //routes
 app.use("/api/v1/auth", authRoute);

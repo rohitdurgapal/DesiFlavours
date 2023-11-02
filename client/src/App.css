@@ -222,6 +222,7 @@ select:focus:active {
   font-size: 14px;
   margin: 10px;
   font-weight: 700;
+  font-family: Arial, sans-serif;
 }
 .bill-table-block .table > :not(caption) > * > * {
   border-bottom-width: 0px;

@@ -45,7 +45,7 @@ const MyOrderBill = () => {
         <div ref={componentRef} className="bill-table-block">
           <Table>
             <tbody>
-              <tr>
+              {/* <tr>
                 <td colSpan={2} style={{ padding: "0px" }}>
                   <div
                     style={{
@@ -61,7 +61,7 @@ const MyOrderBill = () => {
                     />
                   </div>
                 </td>
-              </tr>
+              </tr> */}
               <tr>
                 <td colSpan={2} style={{ padding: "0px" }}>
                   <div
@@ -73,7 +73,7 @@ const MyOrderBill = () => {
                       fontWeight: "800",
                     }}
                   >
-                    Desi Flavours
+                    {order?.restaurantId?.name}
                   </div>
                 </td>
               </tr>
@@ -86,11 +86,31 @@ const MyOrderBill = () => {
                     }}
                   >
                     {order?.restaurantId?.address}
-                    <br />
+                  </div>
+                  {order?.restaurantId?.gstn ? (
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "0px",
+                    }}
+                  >
                     GSTN - {order?.restaurantId?.gstn}
-                    <br />
+                  </div>
+                ) : (
+                  ""
+                )}
+                {order?.restaurantId?.mobile ? (
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "0px",
+                    }}
+                  >
                     Mobile - {order?.restaurantId?.mobile}
                   </div>
+                ) : (
+                  ""
+                )}
                 </td>
               </tr>
               <tr>

@@ -223,9 +223,6 @@ select:focus:active {
   margin: 10px;
   font-weight: 700;
 }
-.bill-table-block table {
-  font-family: Arial, Helvetica, sans-serif;
-}
 .bill-table-block .table > :not(caption) > * > * {
   border-bottom-width: 0px;
 }
@@ -242,8 +239,16 @@ select:focus:active {
 }
 @media print {
   @page {
-    size: 8.5cm 5.5cm;
+    size: 80mm 210mm;
     margin: 0;
     padding: 0;
+  }
+  .bill-table-block table {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bill-table-block table tr td,
+  .bill-table-block table tr td div {
+    color: #000000;
+    font-weight: 500;
   }
 }

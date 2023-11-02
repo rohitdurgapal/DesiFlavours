@@ -26,7 +26,7 @@ const ContactDetails = ({ contactFlag, showContact }) => {
           <div className="contact-details-block">
             <div className="cart-heading">
               <h4>
-                Desi Flavours{" "}
+                Contact Details{" "}
                 <i
                   className="fa fa-times"
                   aria-hidden="true"
@@ -35,8 +35,8 @@ const ContactDetails = ({ contactFlag, showContact }) => {
               </h4>
               {contactData?.map((c) => (
                 <div className="contact-address" key={c._id}>
-                  {c.address} <span>GSTN - {c.gstn}</span>
-                  <span>Mobile - {c.mobile}</span>
+                  {c.address} {c?.gstn ? <span>GSTN - {c.gstn}</span> : ""}
+                  {c?.mobile ? <span>Mobile - {c.mobile}</span> : ""}
                 </div>
               ))}
             </div>

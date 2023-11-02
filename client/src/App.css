@@ -246,9 +246,18 @@ select:focus:active {
   .bill-table-block table {
     font-family: Arial, Helvetica, sans-serif;
   }
+  .bill-table-block table tr th {
+    font-weight: 800;
+    color: #000000;
+    font-size: 16px;
+  }
   .bill-table-block table tr td,
   .bill-table-block table tr td div {
     color: #000000;
     font-weight: 500;
+    font-size: 14px;
+  }
+  .bill-table-block table tr td hr {
+    border-top: 1px solid #000000;
   }
 }

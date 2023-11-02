@@ -222,7 +222,9 @@ select:focus:active {
   font-size: 14px;
   margin: 10px;
   font-weight: 700;
-  font-family: Arial, sans-serif;
+}
+.bill-table-block table {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .bill-table-block .table > :not(caption) > * > * {
   border-bottom-width: 0px;
@@ -237,4 +239,11 @@ select:focus:active {
   color: #f36a21;
   font-weight: 600;
   margin-top: 5px;
+}
+@media print {
+  @page {
+    size: 8.5cm 5.5cm;
+    margin: 0;
+    padding: 0;
+  }
 }

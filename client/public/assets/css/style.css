@@ -8804,8 +8804,8 @@
 }
 .hv1-menu-wrapper {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 30px;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 4%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -8892,12 +8892,13 @@
 }
 @media screen and (max-width: 991px) {
   .hv1-menu-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 767px) {
   .hv1-menu-wrapper {
     grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
   .single-hv1-menu .content h3 {
     font-size: 24px;
@@ -8906,7 +8907,8 @@
 @media screen and (max-width: 575px) {
   .hv1-menu-wrapper {
     grid-template-columns: 1fr;
-    max-width: 450px;
+    /* max-width: 450px; */
+    max-width: 100%;
   }
   .single-hv1-menu .content h3 {
     font-size: 24px;

@@ -8805,7 +8805,7 @@
 .hv1-menu-wrapper {
   display: grid;
   grid-template-columns: 22% 22% 22% 22%;
-  grid-gap: 4%;
+  grid-gap: 43px;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -8892,7 +8892,7 @@
 }
 @media screen and (max-width: 991px) {
   .hv1-menu-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 29% 29% 29%;
   }
 }
 @media screen and (max-width: 767px) {
